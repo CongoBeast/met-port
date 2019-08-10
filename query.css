@@ -1,0 +1,205 @@
+#upperhead{
+      color: whitesmoke;
+      margin:0px;
+    }
+#searchBar{
+      margin:0px;
+      width:350px;
+      border-radius: 5px;
+      border:none;
+      height:35px;
+      padding-left: 10px;
+      outline: white;
+    }
+#secondNav{
+      color: white;
+      margin:0px;
+      margin-bottom: 50px;
+      padding-top:0;
+    }
+.nav-item{
+      width:220px;
+      margin-right: 10px;
+      text-align: center;
+      cursor:pointer;
+      border-radius: 4px;
+    }
+.nav-item:hover{
+      background-color: white;
+      color: black;
+      font-size: 30px;
+      transition: all 0.8s;
+      transition-timing-function: easeout;
+      background-image:
+    }
+
+#th{
+      margin:0;
+    }
+.form-inline{
+      color:whitesmoke;
+    }
+#btn-search{
+      margin-left:10px;
+      margin-right:10px;
+      border-color: whitesmoke;
+      color: inherit;
+    }
+#btn-sign{
+      margin-left:10px;
+      margin-right:10px;
+      border-color: whitesmoke;
+      color: inherit;
+    }
+#btn-sign:hover,#btn-search:hover{
+      background-color: white;
+      color: black;
+      transition: all 0.8s;
+    }
+.fa{
+      margin-left:10px;
+      margin-right:10px;
+      cursor: pointer;
+    }
+.navbar-brand{
+      margin-right:0px;
+      font-size:20px;
+      margin-left:0px;
+      padding-left:0;
+    }
+#ModalSignUp{
+      margin-left: 90px;
+      color: whitesmoke;
+    }
+.modal-content{
+      padding: 10px;
+      background-image: linear-gradient(#343a40,whitesmoke);
+    }
+#username{
+      margin: 50px 50px;
+      width: 350px;
+      font-size: 25px;
+      border-width: medium;
+      border-bottom-width: 3px;
+      border-color: black;
+    }
+#username:hover{
+      font-size: 10px;
+      padding: 0;
+      transition: all 0.8s;
+      height: 45px;
+    }
+#password:hover{
+      font-size: 10px;
+      padding: 0;
+      transition: all 0.8s;
+      height: 45px;
+    }
+#password{
+      margin: 0px 50px 25px;
+      width: 350px;
+      font-size: 25px;
+      border-width: medium;
+      border-bottom-width: 3px;
+      border-color: black;
+    }
+#ModalSignUp:hover{
+      color: black;
+      background-color: whitesmoke;
+    }
+    /* Extra small viewport or screen */
+@media only screen and (max-width : 480px) {
+    body{
+    background-color: ;
+    }
+    .navbar-brand{
+
+    }
+    #searchBar{
+    width:150px;
+    }
+    #btn-sign{
+    margin-left: 10px;
+    }
+    .navbar-brand{
+      margin-left: ;
+    }
+    }
+@media only screen and (min-width : 480px) {
+    body{
+    background-color: ;
+    }
+  }
+@media only screen and (min-width : 992px) and (max-width : 1200px){
+    .nav-item{
+      width:170px;
+      margin-right: 0px;
+      text-align: center;
+      cursor:pointer;
+      border-radius: 4px;
+    }
+    }
+    /* Small viewport or screen */
+@media only screen and (min-width : 768px) {
+    body{
+    background-color: ;
+    }
+    }
+    /* Medium viewport or screen */
+@media only screen and (min-width : 992px) {
+    body{
+    background-color: ;
+    }
+    .navbar-brand{
+    margin-right: 4px;
+    }
+    }
+    /*this is for ipad view*/
+@media only screen and (min-width : 768px) and (max-width : 992px){
+    #navcollapse{
+      margin-left: 580px;
+    }
+    #navbar-brand{
+      margin-left: 200px;
+    }
+    }
+
+    /* Large viewport or screen */
+@media only screen and (min-width : 1200px) {
+    body{
+    background-color: ;
+    }
+    #searchBar{
+    width:400px;
+    }
+    .navbar-brand{
+    margin-right: 5px;
+    }
+    .nav-item{
+      width:200px;
+    }
+    }
+
+@media only screen and (max-width: 480px){
+  #username,#password{
+    width: 200px;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width : 576px) and (max-width : 992px){
+  .navbar-brand{
+  position: relative;
+  }
+  .navbar-header{
+    margin-top: 0px;
+    padding-top: 0;
+  }
+}
+
+@media only screen and (min-width : 576px) and (max-width : 1200px)
+{
+  #searchBar{
+    width: 195px;
+  }
+}

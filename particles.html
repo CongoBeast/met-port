@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      #particles-js{
+        width: 100vw;
+        height:100vh;
+        background: black;
+        background-image: url('mr-t.jpg');
+        background-size: cover;
+        background-repeat: no repeat;
+        overflow:hidden;
+      }
+      .display-1{
+        color: black;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <div id="particles-js"><h1 class="display-1" id="demo">mmpodacast</h1></div>
+    <script src="particles.js"></script>
+      <script src="app.js"></script>
+      <script type="text/javascript">
+
+        let budge = "https://randomuser.me/api/";
+        fetch("https://randomuser.me/api/").then((response)=>{
+          console.log(response);
+        return response.json();
+        })
+        .then((data)=>{
+          console.log(data.results);
+          let name = data.results;
+          let pic = createElement('img');
+          pic.src = name[0].picture;
+          document.body.appendChild(pic);
+        //  document.getElementById("demo").innerHTML= name[0].picture;
+          console.log(name[0].gender);
+        })
+        .catch(()=>{
+          console.log('not good habibi')
+        });
+
+
+      </script>
+  </body>
+</html>

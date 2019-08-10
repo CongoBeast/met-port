@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script type="text/javascript">
+
+     function mud()
+     {
+       var cal;
+       var first = document.getElementById('fir').value;
+       var second = document.getElementById('sec').value;
+       //alert(first.value);
+       var fir = Number(first);
+       var sec = Number(second);
+       document.addEventListener('click', function(){
+         var add = document.getElementById('add');
+         var sub = document.getElementById('sub');
+         var mul = document.getElementById('mul');
+         var div = document.getElementById('div');
+         if(add.checked)
+         {
+           cal = fir + sec;
+           console.log(cal);
+           //alert(cal);
+         }
+         if(sub.checked)
+         {
+           cal = fir - sec;
+           console.log(cal);
+           //console.log("heyyy buddy");
+         }
+         if(div.checked)
+         {
+           cal = fir / sec;
+           console.log(cal);
+           //console.log("heyyy buddy");
+         }
+         if(mul.checked)
+         {
+           cal = fir * sec;
+           console.log(cal);
+           //console.log("heyyy buddy");
+         }
+         //console.log(cal);
+         document.getElementById("mint").innerHTML = cal;
+         first.value = '';
+         second.value = '';
+       })
+     }
+    </script>
+    <style media="screen">
+    .container{
+      padding:20px;
+      background-color: GreenYellow;
+    }
+    #fir{
+      margin-bottom: 50px;
+      border-radius: 5px;
+      padding:5px;
+      border:none;
+    }
+    #sec{
+
+      border-radius: 5px;
+      padding:5px;
+      border:none;
+    }
+    .checks{
+      float: right;
+    }
+    </style>
+  </head>
+  <body >
+    <div class="container">
+      <form class="" action="index.html" method="post">
+        <input type="text" name="" id='fir' placeholder="enter value">
+        <br>
+        <input type="text" name="" id="sec" placeholder="enter second value">
+        <br>
+        <div class="checks">
+          <h3 class="display-4"><input type="radio" id='add' name="rad" value="add">Add</h3>
+       <h3 class="display-4"><input type="radio" id='sub' name="rad" value="sub">Sub</h3>
+        <h3 class="display-4"><input type="radio" id="mul" name="rad" value="mul">Mul</h3>
+       <h3 class="display-4"><input type="radio" id="div" name="rad" value="div">Div</h3>
+        </div>
+
+        <button type="button" class="btn-danger" onclick="mud()" name="button">calculate</button>
+      </form>
+      <h1 class="display-1" id="mint"></h1>
+    </div>
+
+  </body>
+</html>

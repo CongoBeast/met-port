@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontA/css/font-awesome.min.css">
+    <title></title>
+  </head>
+  <style media="screen">
+    .container-fluid{
+      position: relative;
+      color: whitesmoke;
+      background-color: dimgray;
+    }
+    .nav-item{
+      width:200px;
+    }
+    .lander{
+      background-image: url(hoodie2.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+      color:black;
+      font-size: 30px;
+      height:100vh;
+      margin-bottom: 50px;
+      position:relative;
+    }
+    .card{
+      margin-bottom: 50px;
+    }
+    .social-media{
+      background-image: url(mr-t.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+      color:black;
+      font-size: 30px;
+      height:100vh;
+      margin-bottom: 50px;
+    }
+    .social-media{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .social-media span{
+      opacity: 0.5;
+      padding: 10px;
+    }
+    .fa-twitter{
+      background:  #00aced;
+      color:white;
+    }
+    .fa-whatsapp{
+      background:  #25D366;
+      color:white;
+    }
+    .fa-youtube{
+      background:  #FF0000;
+      color:white;
+    }
+    .fa-facebook{
+      background:   #3b5998;
+      color:white;
+    }
+    .social-media span:hover{
+      opacity: 1;
+      color: black
+    }
+    .last-card{
+      margin-left: 400px;
+      width:900px;
+    }
+    .box{
+      height: 100px;
+      width: 100px;
+      background-color: navy;
+      top: 0%;
+      position: absolute;
+      z-index: 1;
+    }
+
+    .pat{
+      position:absolute;
+      left: 50%;
+      top: 30%;
+    }
+    footer{
+      padding:10px;
+    }
+    .pros{
+      text-shadow: 4px 4px 4px black;
+      text-align: center;
+    }
+    }
+  </style>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg bg-dark shadow-lg sticky-top">
+        <div class="navbar-header">
+          <a href="#" class="navbar-brand"><img src="HG.jpg" alt=""></a>
+          <button type="button" class="btn btn-lg bg-light ml-5 d-lg-none" data-toggle='collapse' data-target='#navbarcollapse' name="button">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarcollapse">
+          <ul class="nav navbar-nav navbar-right ml-auto">
+            <li class="nav-item">Home</li>
+            <li class="nav-item">Projects</li>
+            <li class="nav-item">About Me</li>
+            <li class="nav-item">Contact</li>
+          </ul>
+        </div>
+      </nav>
+    <div class="lander">
+      <div class="pat">
+        <h1 class="display-1" id='name'>Methembe Tshuma</h1>
+        <br>
+        <p >A front-end developer</p>
+      </div>
+    </div>
+
+    <h1 class="display-1 pros">Projects</h1>
+    <div class="cardz row">
+      <div class="card col-lg-5 mr-5 ml-5 l-c shadow-lg bg-dark">
+        <div class="card-header">
+          <img src="mic.jpg" alt="">
+        </div>
+        <div class="card-body row">
+        <p class="col-lg-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p class="col-lg-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <div class="card col-lg-5 ml-5 r-c shadow-lg bg-dark">
+        <div class="card-header">
+          <img src="mic2.jpg" alt="">
+        </div>
+        <div class="card-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="last-card">
+      <div class="row">
+        <div class="card col-lg-5 shadow-lg b-c bg-dark">
+          <div class="card-header">
+            <img src="mic2.jpg" alt="">
+          </div>
+          <div class="card-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="social-media">
+        <span><i class="fa fa-4x fa-facebook"></i></span>
+        <span><i class="fa fa-4x fa-whatsapp"></i></span>
+        <span><i class="fa fa-4x fa-twitter"></i></span>
+        <span><i class="fa fa-4x fa-youtube"></i></span>
+      </div>
+        <footer class="bg-dark">
+          <h1 class="display-4">young dumb broke front-end dev</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. vvv  y7</p>
+        </footer>
+
+        <div class="box">
+
+        </div>
+      </div>
+
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!--  -->
+    <script type="text/javascript">
+    $(function(){
+      window.sr = ScrollReveal();
+      sr.reveal('.navbar',{
+        duration: 2000,
+        origin: 'bottom'
+      });
+      sr.reveal('.pros',{
+        duration: 2000,
+        origin: 'top'
+      });
+      sr.reveal('.l-c',{
+        duration: 2000,
+        origin: 'left'
+      });
+      sr.reveal('.r-c',{
+        duration: 2000,
+        origin: 'right'
+      });
+      sr.reveal('.b-c',{
+        duration: 2000,
+        origin: 'bottom'
+      });
+      sr.reveal('.fa',{
+        duration: 2000,
+        origin: 'bottom'
+      });
+      sr.reveal('footer',{
+        duration: 2000,
+        origin: 'bottom'
+      });
+      })
+      </script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="jquery-3.4.1.min.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <h1 class="dis">Todo List</h1>
+   <input type="text" id="enter_task" placeholder="Enter Task">
+   <input type="submit" id="add" value="Add Task">
+<p>
+   <ul id="todo_list">
+   </ul>
+</p>
+
+    <script>
+      function enter_task () {
+   var text = $('#enter_task').val();
+   $('#todo_list').append('<li>'+ text + ' <input type="submit" id="edit" value="Edit">' + '<input type="submit" class="done" id="delete" value="Delete">'  +'</li>');
+};
+
+$('#edit').click(function(){
+   $('li').attr('contenteditable','true');
+});
+
+$('#delete').click(function(){
+   $('.dis').hide();
+});
+
+$(function() {
+   $('#add').on('click', enter_task);
+});
+
+      /*window.addEventListener('load', ()=>{
+      let lat,long;
+
+      if(navigator.geolocation){
+      navigator.geolocation.getCurrentPosition(position => {
+        long = position.coords.longitude;
+        lat= position.coords.latitude;
+        //console.log(lat +" : " + long);
+        const por = "https://cors-anywhere.herokuapp.com/";
+        const pii = `${por}https://api.darksky.net/forecast/bbeba19a517fc115f8166557517ed126/${lat},${long}`;
+
+        fetch(pii)
+        .then((response)=>{
+          return response.json();
+        })
+        .then((data)=>{
+          console.log(data);
+        })
+       });
+
+
+     }
+
+      });
+      function gun(p){
+        console.log(p);
+      }
+      document.getElementById('btn').addEventListener('click',()=>{
+
+      fetch('https://opentdb.com/api.php?amount=10&type=boolean')
+      .then( res=> res.json())
+      .then((data)=>{
+        let  sara = data.results;
+        console.log(sara[2]);
+        document.getElementById('btn').innerHTML = 'next';
+        for(var i =0 ; i<sara.length; i++)
+        {
+          document.getElementById('here').innerHTML = sara[i].question;
+          document.getElementsByClassName.addEventListener('click',gun);
+        }
+      });
+      })*/
+
+
+
+
+    </script>
+  </body>
+</html>

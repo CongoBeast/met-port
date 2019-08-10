@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="fontA/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="jquery-3.4.1.min.js"></script>
+    <style media="screen">
+      .jumbotron{
+        background-image: url(my-pics/recall.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 800px;
+        padding:0;
+        padding-top: 100px;
+      }
+      .bip{
+        text-align: center;
+        color: whitesmoke;
+        text-shadow: 2px 2px 4px black;
+      }
+      .card{
+        padding: 20px;
+        margin-bottom: 100px;
+      }
+      .nav-item{
+        cursor: pointer;
+        width: 240px;
+        margin-left: 5px;
+        margin-right: 5px;
+        text-align: center;
+        padding: 5px;
+        text-decoration: none;
+      }
+      #list{
+        text-decoration: none;
+        color:inherit;
+      }
+      .nav-item:hover{
+        background-color: black;
+        color: white;
+        font-size: 30px;
+        transition: all 0.8s;
+        font-family: arial;
+        border-radius: 5px;
+        border-bottom: 4px blue;
+      }
+      #contact{
+        height: 400px;
+        background-image: none;
+        color: whitesmoke;
+        text-align: center;
+      }
+      .fa{
+        margin: 50px;
+      }
+      .pic{
+        background-image: url(mics.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        color: white;
+      }
+      .pic p {
+        opacity: 0.5;
+      }
+      .second-pic{
+        background-image: url(micd.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        color: white;
+      }
+      .bod{
+      animation-name: dum;
+      animation-duration: 3s;
+      }
+      @keyframes dum{
+        from{
+          .bod{
+            transform: rotate(0deg);
+          }
+        }
+        to{
+          .bod{
+            transform: rotate(360deg);
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-default bg-light shadow-lg sticky-top navbar-expand-lg">
+        <ul class="nav navbar-nav" >
+          <li class="nav-item nav-pills active">Home</li>
+          <li class="nav-item nav-pills" id="list"><a href='#about'>About Me</a></li>
+          <li class="nav-item nav-pills">Download</li>
+          <li class="nav-item nav-pills">Contact</li>
+        </ul>
+      </nav>
+      <div class="jumbotron">
+          <div class="bip">
+            <h1 class="display-1 ">Guy The Rapper</h1>
+          </div>
+      </div>
+      <h1 class="display-1" id="about">About me</h1>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card shadow-lg" id="left-info">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card shadow-lg" id="center-info">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card shadow-lg" id="right-info">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
+        </div>
+        <div class="pic">
+          <h1 class="display-1">this is text</h1>
+          <p id="pic-id">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+        <div class="music-cards">
+          <div class="row">
+            <div class="card col-lg-5 mr-5 ml-5 shadow-lg">
+              <div class="card-header">
+                <img src="mic.jpg" alt="">
+              </div>
+              <div class="card-body bg-success">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+            <div class="card col-lg-5 ml-5 mr-0 shadow-lg">
+              <div class="card-header">
+                <img src="mic2.jpg" class="rounded-circle" alt="">
+              </div>
+              <div class="card-body bg-success">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="second-pic">
+          <h1 class="display-1">this is the second one with stuff in it</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="jumbotron bg-dark shadow-lg" id="contact">
+          <h1 class="display-3">For all bookings</h1>
+          <i class="fa fa-3x fa-facebook"></i>
+          <i class="fa fa-3x fa-whatsapp"></i>
+          <i class="fa fa-3x fa-twitter"></i>
+          <i class="fa fa-3x fa-instagram"></i>
+        </div>
+        <img src="sign.png"  class='bod' alt="">
+        <!-- $('.ball').on('click',()=>{
+          $('.ball').animate({
+            top: '75%',
+            left: '20%'
+          },2000);
+          $('.card').fadeToggle(3000); -->
+      </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
+  <script type="text/javascript">
+  $(function(){
+    window.sr = ScrollReveal();
+    sr.reveal('.navbar',{
+      duration: 2000,
+      origin: 'bottom'
+    });
+    sr.reveal('.bip',{
+      duration:2000,
+      origin: 'top'
+    });
+    sr.reveal('#left-info',{
+      duration: 2000,
+      origin: 'left'
+    });
+    sr.reveal('#center-info',{
+      duration: 2000,
+      origin: 'bottom',
+      delay: 800
+    });
+    sr.reveal('#right-info',{
+      duration: 2000,
+      origin: 'right',
+      delay: 1600
+    });
+    sr.reveal('#contact',{
+      origin:'bottom',
+      duration: 2000
+    })
+    sr.reveal('.pic',{
+      origin: 'top',
+      duration: 2000
+    })
+    sr.reval('#pic-id',{
+      opacity: 1,
+      delay: 1000,
+      origin: 'bottom'
+    })
+  });
+  </script>
+  </body>
+
+</html>

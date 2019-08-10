@@ -1,0 +1,150 @@
+<html lang="en">
+<head>
+<!-- Required meta tags always come first -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<script src="jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+$(()=>{
+
+  $('.squarespace').animate({
+    left: '200px',
+    height: '100px',
+    width: '100px',
+    opacity: '1',
+    marginleft: '100px'
+  },2000)
+
+})
+</script>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="animate.min.css">
+<style>
+  body{
+    background-image: url(mick.jpg);
+  }
+  .nav-item{
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    cursor: pointer;
+  }
+  #pass{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 50px;
+    outline:none;
+    margin-left:100px;
+  }
+  #username{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 50px;
+    outline: none;
+     margin-left:100px;
+  }
+  #username:hover{
+      border-color: black;
+      border-width: 3px;
+      transition: all 1.2s;
+  }
+  #pass:hover{
+    border-color: black;
+    border-width: 3px;
+    transition: all 1.2s;
+  }
+  .nav-item:hover{
+    border-color: crimson;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+  }
+  .midsec{
+    margin: 100px 100px 100px 200px;
+    color: white;
+    text-shadow: 3px 3px 4px #000000;
+  }
+  .btn{
+    color: white;
+    border-color: white;
+    border-radius: 5px;
+  }
+  #prit{
+    text-align: center;
+  }
+  .modal-content{
+    background-color: white;
+    justify-content: center;
+    text-align: center;
+  }
+  #signimg{
+    justify-content: center;
+    margin-left: 100px;
+  }
+  .squarespace{
+    width:200px;
+    height:200px;
+    background-color: whitesmoke;
+    opacity: 0.5;
+    position: absolute;
+  }
+</style>
+<title>Bootstrap Media Queries</title>
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-transparent">
+    <div class="navbar-header">
+      <a href="#" class="navbar-brand">Sneaker Bar</a>
+    </div>
+    <ul class="nav nabar-nav navbar-right" id="mid">
+      <li class="nav-item">Home</li>
+      <li class="nav-item"><select class="" name="">
+        <option value="">Product</option>
+        <option value="">nike</option>
+        <option value="">adidas</option>
+
+
+      </select></li>
+      <li class="nav-item">Contact</li>
+      <li class="nav-item">About Us</li>
+      <li class="nav-item"><button class="btn btn-transparent animated shake"  data-toggle="modal" data-target="#mymodal">Sign In</button></li>
+    </ul>
+  </nav>
+    <div class="midsec">
+      <h1 class="display-1">The Sneaker bAR</h1>
+      <h1 class="display-4">Home of sneaker heads</h1>
+    </div>
+    <div class="modal fade" id="mymodal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img src="sign.png" id="signimg"alt="">
+          </div>
+          <div class="modal-body">
+            <form class="" action="index.html" method="post">
+              <input type="text" id="pass"name="" placeholder="password">
+              <br>
+              <input type="text" id="username" name="" placeholder="username"
+              <br>
+              <button type="button" id='con'class="btn btn-info btn-lg" name="button" style="margin-left: 130px">Continue</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel">
+      div
+    </div>
+    <h1 class="animated bounce bg-light" style="opacity: 0.5;">Hello</h1>
+    <div class="squarespace">
+    <h1 class="display-1">hip</h1>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

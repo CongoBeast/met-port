@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontA/css/font-awesome.min.css">
+    <title></title>
+    <style media="screen">
+      .carousel{
+        position: absolute;
+        left: 30%;
+        tranform: translate(-50%, -50%);
+      }
+      .carousel-inner img{
+        display:block;
+        width: 50vw;
+        height: 100%;
+      }
+      .navbar-brand{
+         -webkit-animation: jump 2s infinite;
+      }
+      img{
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+      *{
+        margin: 0;
+        padding:0;
+      }
+      .mink{
+        width: 50%;
+        height: 50%;
+        top: 50%;
+      }
+      @-webkit-keyframes jump{
+        10%{
+          .navbar-brand{
+            width:100%;
+          }
+        }
+        30%{
+          .navbar-brand{
+            width:50%;
+          }
+        }
+        50%{
+          .navbar-brand{
+            width:100%;
+          }
+        }
+        80%{
+          .navbar-brand{
+            width:50%;
+          }
+        }
+        100%{
+          .navbar-brand{
+            width:100%;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-danger shadow-lg sticky-top">
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand"><img src="HG.jpg" alt=""></a>
+        <button type="button" class="btn btn-lg bg-light ml-5 d-lg-none" data-toggle='collapse' data-target='#navbarcollapse' name="button">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarcollapse">
+        <ul class="nav navbar-nav navbar-right ml-auto">
+          <li class="nav-item">Home</li>
+          <li class="nav-item">Projects</li>
+          <li class="nav-item">About Me</li>
+          <li class="nav-item">Contact</li>
+        </ul>
+      </div>
+    </nav>
+    <div class="carousel slide" data-ride='carousel'>
+    <div class="carousel-item active">
+      <img src="travis.jpg" alt="">
+    </div>
+    <div class="carousel-item">
+      <img src="yellow-newlove.jpg" alt="">
+    </div>
+    <div class="carousel-item">
+      <img src="yellow-orche-high.jpg" alt="">
+    </div>
+    <div class="carousel-item">
+      <img src="aj1-crimson.jpg" alt="">
+    </div>
+    </div>-->
+    <div class="mink">
+      <img src="travis.jpg" alt="">
+    </div>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

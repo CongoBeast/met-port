@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="mass.css">
+    <link rel="stylesheet" href="fontA\css\font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap\css\bootstrap.min.css">
+    <title></title>
+    <style media="screen">
+      body{
+        margin:0;
+        padding:0;
+        height: 100vh;
+        background-image: linear-gradient(to bottom right, blue, yellow);
+      }
+      .task{
+        font-size: 60px;
+        background-color: whitesmoke;
+      }
+      .complete{
+        height: 100px;
+        width: 100vh;
+        background-color: whitesmoke;
+      }
+    </style>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+      $(()=>{
+        var lov= $('p.fa').parent();
+      var text = document.getElementById('text');
+      $('.btn').on('click',()=>{
+        if(text.length != 0)
+        {
+          $('p#innerpost').prepend(text.value);
+          $('#trash').on('click',()=>{
+              $(text).remove();
+          })
+
+          console.log(text.value);
+        }
+        else{
+          alert('Enter a valuable string');
+        }
+      })
+
+      })
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" name="" placeholder="enter a duty" id="text">
+      <input type="button" class="btn" name="" value="add">
+      <div class="task">
+        <h1 >Tasks</h1>
+        <p id="innerpost"><i class="fa fa-4x fa-trash" id="trash"></i><i class="fa fa-4x fa-check"></i></p>
+      </div>
+      <div class="completed">
+        <h1>completed</h1>
+        <p><i class="fa fa-trash"></i> <i class="fa fa-check"></i></p>
+      </div>
+    </div>
+  </body>
+</html>
